@@ -37,23 +37,41 @@
 								<header class="major">
 									<h1>Network Data Collector <br />
 									Node.js Web App</h1>
-									<p>As the lead developer</p>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<p>As the lead developer, I developed this Web App using HTML, CSS, and Javascript for the frontend
+										and Node.js and Express for the backend.
+									</p>
 								</header>
 								<div class="image main"><img src="images/network_data_collector_main.png" alt="" /></div>
+								<ul class="actions special">
+									<li><a href="network_collector_pictures.html" class="button">Click here for more visuals!</a></li>
+								</ul>
 								<h2>Description</h2>
-								<p>Nodemon to readily update and test new code, Puppeteer to pipe and open a browser in the backend for webscrapping</p>
-								<p>Google APIs to communicate and transfer data to Google Drive applications</p>
-								<p>Individual Project, with gudiance on project details from RF and RAN engineers</p>
-								<p>Able to run ping tests and iPerf throughput tests and display results in google sheets</p>
-								<p>Able to send email of spreadsheet as pdf, create graphs on google sheets</p>
-								<p>NEED IMAGES OF COLLECTION AND IPERF SPREADSHEETS, GRAPHS, INPUT SCREEN, OUTPUT SCREEN</p>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								<p>
+									Previously, I developed a Google Chrome Extension to automate data collection of a specific webpage.
+									I was able to accomplish this by developing the Chrome Extension into a web scraper and exporting
+									this data locally onto a Excel .csv file.
+									The goal of this project was to build off the extension and find a way to export the data externally through other means.
+									With all options considered, I decided to use Node.js and develop a Full Stack application.
+									For this part of the web application, I chose to use the Nodemon, Google API, and Puppeteer libraries to support the application.
+									Nodemon created more accessibility for the project, especially for readily updating and testing new code. 
+									Through Google Cloud, I was able to create a Google service account to access Google's API services. With this access,
+									I was able to create new folders and Google Sheets, append new data to these spreadsheets, and create permissions for these new files and folders.
+									Lastly, Puppeteer allowed me to open a browser in the backend out of the view of the user, in which was an issue regarding the Chrome Extension.
+									With the browser in the backend, I was easily able to manipulate the webpage and access the necessary HTML elements containing the information I needed. 
+								</p>
+								<p>
+									In addition to creating and appending to Google Sheets, this part of the Web App also has the following features: 
+									running ping and iPerf throughput tests, automatically create graphs in Google Sheets based on the data collected from the spreadsheet, 
+									send an automatic email of the spreadsheets and graphs as a pdf. The ping and throughput testing is done on a timed basis, in which the
+									tests run individually on a timer set by the user in a configuration file. 
+								</p>
+								<p>
+									With this Web App, there are currently four different functions: Network Data Collection (Long-term Collection), 
+									Single Data Collection (Short-Term Collection + Live User Display), Online Mapping, and Offline Post Processing.
+								</p>
 								<h3>Languages</h3>
-								<p>Backend: HTML, CSS, Node.js</p>
+								<p>Frontend: HTML, CSS, Javascript</p>
+								<p>Backend: Node.js, Express</p>
 							</section>
 
 					</div>
