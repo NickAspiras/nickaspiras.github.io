@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Nick Aspiras - Network Data Collector Web App</title>
+		<title>Nick Aspiras - Single Data Collection Web App Extension</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -35,24 +35,30 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1>Network Data Collector <br />
-									Node.js Web App</h1>
-                                    <ul class="actions special">
-                                        <li><a href="project1b.html" class="button">Back to Project Page</a></li>
-                                    </ul>
-									<p>Single Collection Submission Page</p>
-                                    <div class="image main"><img src="images/network_collection_output_page.jpg" alt="" /></div>
-                                    <p>Single Collection CPE Log File with Sample Data</p>
-                                    <div class="image main"><img src="images/network_collection_spreadsheet.jpg" alt="" /></div>
-                                    <p>Network Ping Collection Spreadsheet with Sample Data</p>
-                                    <div class="image main"><img src="images/network_ping_collection.jpg" alt="" /></div>
-                                    <p>Network iPerf Collection Spreadsheet with Sample Data</p>
-                                    <div class="image main"><img src="images/network_udpdl_collection.jpg" alt="" /></div>
-                                    <p>Network Collection Graph from Sample Data</p>
-                                    <div class="image main"><img src="images/network_collection_graph.jpg" alt="" /></div>
+									<h1>Single Data Collection <br />Web App Extension</h1>
 								</header>
-                                
-								
+								<p>
+									The Single Data Collection is an extension/function of the <a href = "project1.html">Network Data Collector Web App</a>.
+								</p>
+								<div class="image main"><img src="images/single_collection_main.jpg" alt="" /></div>
+								<ul class="actions special">
+									<li><a href="network_collector_pictures.html" class="button">Click here for more visuals!</a></li>
+								</ul>
+								<h2>Description</h2>
+								<p>
+									The goal for this function of the Network Data Collector Web App was to develop a short-term version of the 
+									Network Data Collection and have those results displayed to the user instantly. Prevously, KCCTech had developed
+									a similar tool, which would only run iPerf throughput tests and display the results to the user live. The Single
+									Data Collection Extension combines this previous tool, while integrating a parallel collection of CPE KPI information.
+									There are two options when running this program. The first is to run a continuous CPE Collection and displaying the 
+									results live to the user. The second option is running throughput and/or ping tests, displaying these results on the screen
+									live to simulate a command line, and running a continuous CPE KPI Collection in parallel until the tests are complete.
+									The throughput and tests are configurable through an included configuration .csv file located in the main web app folder.
+									Not only are the results displayed to the user, but also are written to files and stored locally.
+								</p>
+								<h3>Languages</h3>
+								<p>Frontend: HTML, CSS, Javascript</p>
+								<p>Backend: Node.js, Express</p>
 							</section>
 
 					</div>
