@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Nick Aspiras - Veggie Rescue Web App</title>
+		<title>Nick Aspiras - Offline Mapping Web App Extension</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -35,30 +35,36 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1>Veggie Rescue<br />Node.js Web App</h1>
-									<p>
-										As a contributing developer, I developed my portion of this Web App in Javascript, Typescript, React,
-										MongoDB, and Express.
-									</p>
+									<h1>Offline Mapping <br />Web App Extension</h1>
 								</header>
-								<div class="image main"><img src="images/veggie-rescue-first-page.jpg" alt="" /></div>
+								<p>
+									The Offline Mapping is an extension/feature of the <a href = "project1.html">Network Data Collector Web App</a>.
+								</p>
+								<div class="image main"><img src="images/single_collection_main.jpg" alt="" /></div>
 								<ul class="actions special">
-									<li><a href="veggie_rescue_pictures.html" class="button">Click here for more visuals!</a></li>
+									<li><a href="offline_mapping_pictures.html" class="button">Click here for more visuals!</a></li>
 								</ul>
 								<h2>Description</h2>
 								<p>
-									On the Veggie Rescue Web App, I worked on a team alongside 7 other developers throughout the entire development.
-									The goal of this project was to develop a web application for the drivers at Veggie Rescue to track their pickups
-									and deliveries without the use of pencil and paper. Veggie Rescue is a non-profit in the San Luis Obispo country 
-									that focuses on repurposing vegetables from supermarkets and stores toward locations such as homeless shelters 
-									and farms. I primarily developed in the backend, using Express, React, and MongoDB to create routes and necessary
-									middleware. 
+									The goal for this feature of the Network Data Collector Web App was to develop a short-term version of the 
+									Network Data Collection and have those results displayed to the user instantly. Prevously, KCCTech had developed
+									a similar tool, which would only run iPerf throughput tests and display the results to the user live. The Single
+									Data Collection Extension combines this previous tool, while integrating a parallel collection of CPE KPI information.
+									There are two options when running this program. The first is to run a continuous CPE Collection and displaying the 
+									results live to the user. The second option is running throughput and/or ping tests, displaying these results on the screen
+									live to simulate a command line, and running a continuous CPE KPI Collection in parallel until the tests are complete.
+									The throughput and tests are configurable through an included configuration .csv file located in the main web app folder.
+									Not only are the results displayed to the user, but also are written to files and stored locally.
+									These log results can also be used in the <a href = "project1c">Offline Mapping</a> feature of the Network Data Collector Web App as well.
 								</p>
 								<p>
-									Click <a href = "https://www.veggie-rescue.h4i-cp.org/">Here</a> to view the fully deployed web app!
+									Also, there are two optional inputs for the Server IP Address for the throughput tests and the CPE IP Address, which
+									may change on a location basis. This allows the web application to be used in any location that uses similar equipment
+									and/or technology as KCCTech.
 								</p>
 								<h3>Languages</h3>
-								<p>Backend: Typescript, Javascript, MongoDB</p>
+								<p>Frontend: HTML, CSS, Javascript</p>
+								<p>Backend: Node.js, Express</p>
 							</section>
 
 					</div>
