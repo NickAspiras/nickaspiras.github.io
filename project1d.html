@@ -40,28 +40,31 @@
 								<p>
 									The Offline Mapping is an extension/feature of the <a href = "project1.html">Network Data Collector Web App</a>.
 								</p>
-								<div class="image main"><img src="images/single_collection_main.jpg" alt="" /></div>
+								<div class="image main"><img src="images/offline-mapping-login.jpg" alt="" /></div>
 								<ul class="actions special">
 									<li><a href="offline_mapping_pictures.html" class="button">Click here for more visuals!</a></li>
 								</ul>
 								<h2>Description</h2>
 								<p>
-									The goal for this feature of the Network Data Collector Web App was to develop a short-term version of the 
-									Network Data Collection and have those results displayed to the user instantly. Prevously, KCCTech had developed
-									a similar tool, which would only run iPerf throughput tests and display the results to the user live. The Single
-									Data Collection Extension combines this previous tool, while integrating a parallel collection of CPE KPI information.
-									There are two options when running this program. The first is to run a continuous CPE Collection and displaying the 
-									results live to the user. The second option is running throughput and/or ping tests, displaying these results on the screen
-									live to simulate a command line, and running a continuous CPE KPI Collection in parallel until the tests are complete.
-									The throughput and tests are configurable through an included configuration .csv file located in the main web app folder.
-									Not only are the results displayed to the user, but also are written to files and stored locally.
-									These log results can also be used in the <a href = "project1c">Offline Mapping</a> feature of the Network Data Collector Web App as well.
+									The goal for this feature of the Network Data Collector Web App was to create an indoor mapping feature, where the user can have post process
+									KPI, throughput, or ping information collected previously and have it displayed through colored points on a map. This feature use the File Stream library
+									to move through the post-processing and collection folders, as well as read and parse the information from the data files. Offline Mapping has
+									four inputs: typeOfData, isStatic, KPI Settings file, and Location Image file. The typeOfData is a drop-down input, in which the user will select the type
+									of data that will be used and displayed on the map. This selection will determine which folder will be used to read data. The isStatic input is a 
+									button that, if pushed, will display the data as if the user was standing still, simulating a static test. The KPI Settings file contains the information for creating a legend and specifying which points are colored.
+									Lastly, the Location Image is a picture file to simulate the live points being placed on the map. Intially, the user will select points
+									on the map on the first page to show the start/stop points of each collection. Then, the points will be displayed on the map in either a circle at each point if the user selected
+									a static test, or will make a line of points if the test is dynamic. The dots will only be drawn if they fit the criteria specified in the legend. 
+									The Offline Mapping feature can also use the information collected from the <a href = "project1b">Single Data Collection</a> feature and display the information as well.
 								</p>
 								<p>
-									Also, there are two optional inputs for the Server IP Address for the throughput tests and the CPE IP Address, which
-									may change on a location basis. This allows the web application to be used in any location that uses similar equipment
-									and/or technology as KCCTech.
+									This tool provides an on-the-go testing ability for indoor or outdoor mapping at any location. With the addition of
+									the map feature, the user can view the data that was collected previously and have an additional check to ensure the information
+									they read was correct.
 								</p>
+								<ul class="actions special">
+									<li><a href="project1.html" class="button">Back to Network Data Collector Page</a></li>
+								</ul>
 								<h3>Languages</h3>
 								<p>Frontend: HTML, CSS, Javascript</p>
 								<p>Backend: Node.js, Express</p>

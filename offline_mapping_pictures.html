@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Nick Aspiras - Online Mapping Web App Extension</title>
+		<title>Nick Aspiras - Offline Mapping Pictures</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -35,39 +35,25 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1>Online Mapping <br />Web App Extension</h1>
+									<h1>Offline Mapping <br />Web App Extension</h1>
+                                    <ul class="actions special">
+                                        <li><a href="project1d.html" class="button">Back to Project Page</a></li>
+                                    </ul>
+                                    <p>Offline Mapping Original Page</p>
+                                    <div class="image main"><img src="images/offline-mapping-login.jpg" alt="" /></div>
+                                    <p>Offline Mapping Placing Points</p>
+                                    <div class="image main">
+										<video height="400" width="600" controls autoplay muted>
+											<source src="images/offline-mapping-video.mp4" type="video/mp4">
+										</video>
+									</div>
+                                    <p>Offline Mapping Map Result</p>
+                                    <div class="image main"><img src="images/offline-mapping-output.jpg" alt="" /></div>
+									
+                                    
 								</header>
-								<p>
-									The Online Mapping is an extension/feature of the <a href = "project1.html">Network Data Collector Web App</a>.
-								</p>
-								<div class="image main"><img src="images/online-mapping-login.jpg" alt="" /></div>
-								<ul class="actions special">
-									<li><a href="online_mapping_pictures.html" class="button">Click here for more visuals!</a></li>
-								</ul>
-								<h2>Description</h2>
-								<p>
-									The goal for this feature of the Network Data Collector Web App was to create an indoor mapping feature, where the user can have the live 
-									KPI, throughput, or ping information displayed through colored points on a map. This feature uses Puppeteer to open a browser
-									in the background and the 'spawn' function in the Child Process library to obtain the data for the mapping. Online Mapping has
-									four inputs: typeOfTest, CPE Ip, KPI Settings file, and Location Image file. The typeOfTest is an input for the iPerf/Ping tests
-									that will be run, which the commands are parsed from the config.csv file. The CPE Ip is an input in case the Ip address for the CPE's 
-									GUI webpage changes. The KPI Settings file contains the information for creating a legend and specifying which points are colored.
-									Lastly, the Location Image is a picture file to simulate the live points being placed on the map. Intially, the user will select points
-									on the map on the first page to show the start/stop points of each collection. Then, one-by-one the user will hit the start/stop to execute
-									the program, eventually creating a map displaying all the information collected as points on the map.
-									Additionally, the information collected from the CPE's GUI page and the iPerf/Ping tests are stored as log files 
-									in the test_logs folder created previously.
-								</p>
-								<p>
-									This tool provides an on-the-go testing ability for indoor or outdoor mapping at any location. With the addition of
-									the map feature, the user can view the data live in the same area they are in.
-								</p>
-								<ul class="actions special">
-									<li><a href="project1.html" class="button">Back to Network Data Collector Page</a></li>
-								</ul>
-								<h3>Languages</h3>
-								<p>Frontend: HTML, CSS, Javascript</p>
-								<p>Backend: Node.js, Express</p>
+                                
+								
 							</section>
 
 					</div>
